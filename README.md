@@ -5,22 +5,6 @@
 
 Monty 0.98 is a scripting language that is first compiled into Monty byte codes (Just like Python). It relies on a unique stack, with specific instructions to manipulate it. The goal of this project is to create an interpreter for Monty ByteCodes files.
 
-## Files of this repository
-
-| File      | Description                |
-| :-------- | :------------------------- |
-|  `main.c`           | It contains the entry point of the program, where the execution begins.|
-|  `monty.h`          | It is the first header file that contains all the c libraries needed for the program, the description and prototypes of all the functions, structures, builtins, printing functions, and helpers. |
-|  `lists.h`           | It is the second header file, this contains others functions that are necessary for the proggram to work|
-|  `fun1.c`     | Functions that help the main functions. |
-|  `fun2.c`     | Functions that help the main functions. |
-|  `opcode.c`  | The match file and some functions. |
-|  `handler1.c`       | It contains some of the functions that we need to interpret monty. |
-|  `handler2.c`| It contains some of the functions that we need to interpret monty. |
-|  `handler3.c`           | It contains some of the functions that we need to interpret monty. |
-|  `char.c`     | Another main functions. |
-|  `free.c`     | A function to free something by choice. |
-|  `strtow.c`     | Functions that help the main functions. |
 
 ## Installation
 
