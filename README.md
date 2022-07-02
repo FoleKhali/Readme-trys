@@ -1,9 +1,7 @@
 <p align="center">
   <a href="https://ibb.co/K5t3PpC"><img src="https://i.ibb.co/yNzb9cL/65f4a1dd9c51265f49d0.png" alt="65f4a1dd9c51265f49d0" border="0" height="60%" width="50%"></a>
 </p>
-<p align = "center">
-<h1>🔶 AirBnB clone 🔶</h1>
-</p>
+<h1 align= "center">🔶 AirBnB clone 🔶</h1>
 
 Monty 0.98 is a scripting language that is first compiled into Monty byte codes (Just like Python). It relies on a unique stack, with specific instructions to manipulate it. The goal of this project is to create an interpreter for Monty ByteCodes files.
 
