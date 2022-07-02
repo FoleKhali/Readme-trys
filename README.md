@@ -1,5 +1,5 @@
 <p align="center">
-  <img src= "https://ibb.co/K5t3PpC" height="60%" width="50%" />
+  <a href="https://ibb.co/K5t3PpC"><img src="https://i.ibb.co/yNzb9cL/65f4a1dd9c51265f49d0.png" alt="65f4a1dd9c51265f49d0" border="0"></a>
 </p>
 
 # 🔶 AirBnB clone 🔶
