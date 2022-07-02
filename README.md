@@ -3,55 +3,38 @@
 </p>
 <h1 align= "center">🔶 AirBnB clone 🔶</h1>
 
-Monty 0.98 is a scripting language that is first compiled into Monty byte codes (Just like Python). It relies on a unique stack, with specific instructions to manipulate it. The goal of this project is to create an interpreter for Monty ByteCodes files.
+This is the first part of the AirBnB clone proyect!
+That is to write a console that interpret the AirBnB objects.
 
+## Command Interpreter
 
-## Installation
+The console have many functions, that are:
+- Create a new object
+- Show an object
+- Update an object's attributes
+- destroy an object
 
-
-- Clone this repository: `git clone "https://github.com/FoleKhali/monty.git"`
-
-- Change directories into the repository: `cd monty`
-
-- Compile: `gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o monty`
-
-## Monty byte code files
-Files containing Monty byte codes usually have the .m extension. Most of the industry uses this standard but it is not required by the specification of the language. There is not more than one instruction per line. There can be any number of spaces before or after the opcode and its argument:
-
-```bash
-julien@ubuntu:~/monty$ cat -e bytecodes/000.m
-push 0$
-push 1$
-push 2$
-  push 3$
-                   pall    $
-push 4$
-    push 5    $
-      push    6        $
-pall$
-julien@ubuntu:~/monty$
+# Installation
 ```
-Monty byte code files can contain blank lines (empty or made of spaces only, and any additional text after the opcode or its required argument is not taken into account:
-```bash
-julien@ubuntu:~/monty$ cat -e bytecodes/001.m
-push 0 Push 0 onto the stack$
-push 1 Push 1 onto the stack$
+git clone git@github.com:GerardoMP18/holbertonschool-AirBnB_clone.git
+cd holbertonschool-AirBnB_clone
+```
+How can we use the interpreter?
+```
+$ ./console.py
+(hbnb) help
+
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
+
+(hbnb) 
+(hbnb) create
+(hbnb) ** class name missing **
+(hbnb) quit
 $
-push 2$
-  push 3$
-                   pall    $
-$
-$
-                           $
-push 4$
-$
-    push 5    $
-      push    6        $
-$
-pall This is the end of our program. Monty is awesome!$
-julien@ubuntu:~/monty$
 ```
 ## Authors
 
-- Gerardo Marin | [GitHub](https://github.com/GerardoMP18))  
+- Gerardo Marin | [GitHub](https://github.com/GerardoMP18)  
 - Dhanna Palomino | [GitHub](https://github.com/FoleKhali)
