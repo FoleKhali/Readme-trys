@@ -2,7 +2,7 @@
 # 🔶 AirBnB clone 🔶
 
 <p align ="center">
-<img src= "https://holbertonintranet.s3.amazonaws.com/uploads/medias/2018/6/65f4a1dd9c51265f49d0.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOU5BHMTQX4%2F20220702%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220702T064139Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=caf6312b19c15f2aab094a23ecb7ce9e8e083afa3b25a0c71c13b2e003049995" height="60%" width="50%" />
+<img src= "https://ibb.co/K5t3PpC" height="60%" width="50%" />
 <p/>
 
 Monty 0.98 is a scripting language that is first compiled into Monty byte codes (Just like Python). It relies on a unique stack, with specific instructions to manipulate it. The goal of this project is to create an interpreter for Monty ByteCodes files.
