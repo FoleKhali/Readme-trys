@@ -69,5 +69,5 @@ julien@ubuntu:~/monty$
 ```
 ## Authors
 
-- Fernando Gonzales | [GitHub](https://github.com/gpradinett)  
+- Gerardo Marin | [GitHub](https://github.com/GerardoMP18))  
 - Dhanna Palomino | [GitHub](https://github.com/FoleKhali)
