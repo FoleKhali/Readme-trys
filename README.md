@@ -19,7 +19,7 @@ The console have many functions, that are:
 git clone git@github.com:GerardoMP18/holbertonschool-AirBnB_clone.git
 cd holbertonschool-AirBnB_clone
 ```
-How can we use the interpreter?
+# How can we use the interpreter?
 ```
 $ ./console.py
 (hbnb) help
@@ -32,7 +32,7 @@ EOF  help  quit
 (hbnb) quit
 $
 ```
-Using the *create, show, update and destroy functions:
+## Using the create, show, update and destroy functions:
 ```
 $ ./console.py
 (hbnb)
@@ -59,6 +59,8 @@ hbnb) show BaseModel 0aeb0145-807f-4b39-8111-c793d8af36d5
 (hbnb) quit
 $
 ```
+## Enviromment used
+`Ubuntu 20.04 LTS using python3 (version 3.8.5)`
 ## Authors
 
 - Gerardo Marin | [GitHub](https://github.com/GerardoMP18)  
