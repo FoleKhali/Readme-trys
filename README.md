@@ -59,7 +59,7 @@ hbnb) show BaseModel 0aeb0145-807f-4b39-8111-c793d8af36d5
 (hbnb) quit
 $
 ```
-## Enviromment used
+## Environment used
 `Ubuntu 20.04 LTS using python3 (version 3.8.5)`
 ## Authors
 
