@@ -32,7 +32,7 @@ EOF  help  quit
 (hbnb) quit
 $
 ```
-Using the create, show, update and destroy functions:
+Using the *create, show, update and destroy functions:
 ```
 $ ./console.py
 (hbnb)
