@@ -44,12 +44,15 @@ $ ./console.py
 (hbnb) show dfdgdfg
 ** class doesn't exist **
 (hbnb) show BaseModel 0aeb0145-807f-4b39-8111-c793d8af36d5
-[BaseModel] (0aeb0145-807f-4b39-8111-c793d8af36d5) {'id': '0aeb0145-807f-4b39-8111-c793d8af36d5', 'created_at': datetime.datetime(2022, 7, 3, 0, 1, 12, 264613), 'updated_at': datetime.datetime(2022, 7, 3, 0, 1, 12, 264637)}
+[BaseModel] (0aeb0145-807f-4b39-8111-c793d8af36d5) {'id': '0aeb0145-807f-4b39-8111-c793d8af36d5',
+'created_at': datetime.datetime(2022, 7, 3, 0, 1, 12, 264613), 'updated_at': datetime.datetime(2022, 7, 3, 0, 1, 12, 264637)}
 (hbnb) update BaseModel
 ** instance id missing **
 (hbnb) update BaseModel 5b63ffeb-3630-42fe-bfc4-e446a36da937 AirIsfun "NoTooMuch"
 hbnb) show BaseModel 0aeb0145-807f-4b39-8111-c793d8af36d5
-[BaseModel] (0aeb0145-807f-4b39-8111-c793d8af36d5) {'id': '0aeb0145-807f-4b39-8111-c793d8af36d5', 'created_at': datetime.datetime(2022, 7, 3, 0, 1, 12, 264613), 'updated_at': datetime.datetime(2022, 7, 3, 0, 1, 12, 264637), 'AirIsfun': 'NoTooMuch'}
+[BaseModel] (0aeb0145-807f-4b39-8111-c793d8af36d5) {'id': '0aeb0145-807f-4b39-8111-c793d8af36d5', 
+'created_at': datetime.datetime(2022, 7, 3, 0, 1, 12, 264613), 
+'updated_at': datetime.datetime(2022, 7, 3, 0, 1, 12, 264637), 'AirIsfun': 'NoTooMuch'}
 (hbnb) destroy BaseModel 0aeb0145-807f-4b39-8111-c793d8af36d5
 (hbnb) show BaseModel 0aeb0145-807f-4b39-8111-c793d8af36d5
 ** no instance found **
