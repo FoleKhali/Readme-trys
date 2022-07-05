@@ -1,73 +1,91 @@
+<p align="center">
+  <a href="https://ibb.co/K5t3PpC"><img src="https://i.ibb.co/yNzb9cL/65f4a1dd9c51265f49d0.png" alt="65f4a1dd9c51265f49d0" border="0" height="60%" width="50%"></a>
+</p>
+<h1 align= "center">🔶 AirBnB clone 🔶</h1>
 
-# 🔶 AirBnB clone 🔶
+This is the first part of the AirBnB clone proyect!
+That is to write a console that interpret the AirBnB objects.
 
-<img src= "https://assets.website-files.com/6105315644a26f77912a1ada/610540e8b4cd6969794fe673_Holberton_School_logo-04-04.svg" height="40%" width="30%" />
+## Command Interpreter
 
-Monty 0.98 is a scripting language that is first compiled into Monty byte codes (Just like Python). It relies on a unique stack, with specific instructions to manipulate it. The goal of this project is to create an interpreter for Monty ByteCodes files.
+The console have many functions, that are:
+- Create a new object
+- Show an object
+- Update an object's attributes
+- Destroy an object
 
-## Files of this repository
-
-| File      | Description                |
-| :-------- | :------------------------- |
-|  `main.c`           | It contains the entry point of the program, where the execution begins.|
-|  `monty.h`          | It is the first header file that contains all the c libraries needed for the program, the description and prototypes of all the functions, structures, builtins, printing functions, and helpers. |
-|  `lists.h`           | It is the second header file, this contains others functions that are necessary for the proggram to work|
-|  `fun1.c`     | Functions that help the main functions. |
-|  `fun2.c`     | Functions that help the main functions. |
-|  `opcode.c`  | The match file and some functions. |
-|  `handler1.c`       | It contains some of the functions that we need to interpret monty. |
-|  `handler2.c`| It contains some of the functions that we need to interpret monty. |
-|  `handler3.c`           | It contains some of the functions that we need to interpret monty. |
-|  `char.c`     | Another main functions. |
-|  `free.c`     | A function to free something by choice. |
-|  `strtow.c`     | Functions that help the main functions. |
-
-## Installation
-
-
-- Clone this repository: `git clone "https://github.com/FoleKhali/monty.git"`
-
-- Change directories into the repository: `cd monty`
-
-- Compile: `gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o monty`
-
-## Monty byte code files
-Files containing Monty byte codes usually have the .m extension. Most of the industry uses this standard but it is not required by the specification of the language. There is not more than one instruction per line. There can be any number of spaces before or after the opcode and its argument:
-
-```bash
-julien@ubuntu:~/monty$ cat -e bytecodes/000.m
-push 0$
-push 1$
-push 2$
-  push 3$
-                   pall    $
-push 4$
-    push 5    $
-      push    6        $
-pall$
-julien@ubuntu:~/monty$
+# Installation
 ```
-Monty byte code files can contain blank lines (empty or made of spaces only, and any additional text after the opcode or its required argument is not taken into account:
-```bash
-julien@ubuntu:~/monty$ cat -e bytecodes/001.m
-push 0 Push 0 onto the stack$
-push 1 Push 1 onto the stack$
-$
-push 2$
-  push 3$
-                   pall    $
-$
-$
-                           $
-push 4$
-$
-    push 5    $
-      push    6        $
-$
-pall This is the end of our program. Monty is awesome!$
-julien@ubuntu:~/monty$
+git clone git@github.com:GerardoMP18/holbertonschool-AirBnB_clone.git
+cd holbertonschool-AirBnB_clone
 ```
+# How can we use the interpreter?
+Executing the console in a `interactive` mode:
+```
+$ ./console.py
+(hbnb) help
+
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
+
+(hbnb) 
+(hbnb) quit
+$
+```
+And also in `non-interactive` mode:
+```
+$ echo "help" | ./console.py
+(hbnb)
+
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
+(hbnb) 
+$
+$ cat test_help
+help
+$
+$ cat test_help | ./console.py
+(hbnb)
+
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
+(hbnb) 
+$
+```
+Using the `create`, `show`, `update` and `destroy` functions:
+```
+$ ./console.py
+(hbnb)
+(hbnb)
+(hbnb) create
+** class name missing **
+(hbnb) create BaseModel
+0aeb0145-807f-4b39-8111-c793d8af36d5
+(hbnb) show dfdgdfg
+** class doesn't exist **
+(hbnb) show BaseModel 0aeb0145-807f-4b39-8111-c793d8af36d5
+[BaseModel] (0aeb0145-807f-4b39-8111-c793d8af36d5) {'id': '0aeb0145-807f-4b39-8111-c793d8af36d5',
+'created_at': datetime.datetime(2022, 7, 3, 0, 1, 12, 264613), 
+'updated_at': datetime.datetime(2022, 7, 3, 0, 1, 12, 264637)}
+(hbnb) update BaseModel
+** instance id missing **
+(hbnb) update BaseModel 5b63ffeb-3630-42fe-bfc4-e446a36da937 AirIsfun "NoTooMuch"
+hbnb) show BaseModel 0aeb0145-807f-4b39-8111-c793d8af36d5
+[BaseModel] (0aeb0145-807f-4b39-8111-c793d8af36d5) {'id': '0aeb0145-807f-4b39-8111-c793d8af36d5', 
+'created_at': datetime.datetime(2022, 7, 3, 0, 1, 12, 264613), 
+'updated_at': datetime.datetime(2022, 7, 3, 0, 1, 12, 264637), 'AirIsfun': 'NoTooMuch'}
+(hbnb) destroy BaseModel 0aeb0145-807f-4b39-8111-c793d8af36d5
+(hbnb) show BaseModel 0aeb0145-807f-4b39-8111-c793d8af36d5
+** no instance found **
+(hbnb) quit
+$
+```
+## Environment used
+`Ubuntu 20.04 LTS using python3 (version 3.8.5)`
 ## Authors
 
-- Fernando Gonzales | [GitHub](https://github.com/gpradinett)  
+- Gerardo Marin | [GitHub](https://github.com/GerardoMP18)  
 - Dhanna Palomino | [GitHub](https://github.com/FoleKhali)
